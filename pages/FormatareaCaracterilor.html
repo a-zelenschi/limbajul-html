@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Limbajul HTML</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html">Limbajul HTML <i class="fas fa-file-code logo"></i></a>
+        <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+
+    </header>
+
+    <div class="page-container">
+
+        <aside id="side-menu">
+            <a href="./CeEsteHtml.html"> Ce este HTML</a>
+            <a href="./StructuraDocumentuluiHtml.html">Structura documentului HTML</a>
+            <a href="./FormatareaCaracterilor.html">Formatarea caracterelor, organizarea textului.</a>
+            <a href="./OperareCuObiecte.html">Operarea cu obiecte</a>
+            <a href="./Forme.html">Forme</a> 
+        </aside>
+
+        <main>
+            <div class="aliniere form-car">
+                Un font este caracterizat de următoarele atribute:
+
+                culoare (stabilita prin atributul color);
+                tipul sau stilul (stabilit prin atributul face);
+                mărimea (definita prin atributul size);
+                mărimea în puncte tipografice (stabilita prin atributul point-size);
+                grosime (definita prin atributul weight).
+                Toate aceste atribute aparțin etichetei <font>, care permite inserarea de blocuri de texte
+                    personalizate.
+
+                    Culori
+                    O culoare poate fi precizata în două moduri:
+
+                    printr-un nume de culoare.
+                    printr-o constantă conform standardului de culoare RGB (Red, Green, Blue). O astfel de constantă se
+                    formează astfel: #rrggbb, unde r, g și b sunt cifre hexazecimale.
+                    Culoarea fontului
+                    Pentru a scrie un fragment de text cu caractere de o anumită culoare se incadrează acest fragment
+                    intre delimitatorii <font>...</font> având stabilit atributul color la valoarea necesara. De
+                    exemplu:
+
+                    font color=red fragment de text de culoare rosie /font
+
+                    Familia fontului
+                    Pentru a scrie un text într-o pagină pot fi folosite mai multe fonturi (stiluri de caractere).
+                    Există cinci familii generice de fonturi care sunt de regulă disponibile pe toate calculatoarele
+                    utilizatorilor: serif, sans serif, cursive, monospace și fantasy.
+                    Tipul de font necesar poate fi stabilit prin atributul face al etichetei <font>.
+                        Pot fi introduse mai multe fonturi separate prin virgula.
+
+                        font face=" Arial, serif, monospace "
+
+                        în acest caz browser-ul va utiliza primul font pe care il cunoaște.
+
+            </div>
+
+            <a class="form-car-href" href="./examples/CuloareaSiFamiliaFontului.html" target="iframe_a">
+                <div class="html-code-container">
+                    <div class="code-container">
+                        <br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;title&gt; Culoarea și familia fontului&lt;/title&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        Aceste linie este scrisa cu caractere normale.&lt;br /&gt;<br>
+                        &lt;font color="red"&gt;Aceasta linie este rosie.&lt;/font&gt;&lt;br /&gt;<br>
+                        Aici&lt;font color="green"&gt;fiecare&lt;/font&gt;<br>
+                        &lt;font color="blue"&gt;cuvant&lt;/font&gt;<br>
+                        &lt;font color="yellow"&gt;are&lt;/font&gt;<br>
+                        &lt;font color="cyan"&gt;alta&lt;/font&gt;<br>
+                        &lt;font color="#3478fa"&gt;culoare.&lt;/font&gt;&lt;br /&gt;<br>
+                        &lt;font face="monospace"&gt;Linie scrisa cu caractere monospatiate.&lt;/font&gt; &lt;br
+                        /&gt;<br>
+                        &lt;font face="arial"&gt;Linie scrisa cu caractere arial.&lt;/font&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </div>
+                </div>
+            </a>
+
+            <div class="form-car-bat">Mărimea fontului
+                Pentru a stabili mărimea unui font se utilizează atributul size al etichetei <font>. Valorile acestui
+                    atribut
+                    pot fi:
+                    1, 2, 3, 4, 5, 6, 7 ( 1 pentru cel mai mic font și 7 pentru cel mai mare);
+                    +1, +2, etc. pentru a mari dimensiunea fontului cu 1, 2, etc. fata de valoarea curenta;
+                    -1, -2, etc. pentru a micșora dimensiunea fontului cu 1, 2, etc. fata de valoarea curenta.
+                    Mărimea unui font poate fi stabilita exact cu ajutorul atributului point-size. Valorile acceptate de
+                    acest
+                    atribut pot fi orice numere naturale pozitive. Numărul astfel precizat reprezintă mărimea fontului
+                    în puncte
+                    tipografice.
+                    Acest atribut funcționează numai cu Netscape Communicator.</div>
+            <a class="form-car-href" href="./examples/MarimeaFontului.html" target="iframe_a">
+                <div class="html-code-container">
+                    <div class="code-container"><br>
+                        &lt;html&gt; <br>
+                        &lt;head&gt; <br>
+                        &lt;title&gt; Marimea fontului&lt;/title&gt; <br>
+                        &lt;/head&gt; <br>
+                        &lt;body&gt; <br>
+                        Aceste linie este scrisa cu caractere normale. &lt;br /&gt; <br>
+                        &lt;font size="5"&gt;Fonturi de marime 5.&lt;/font&gt;&lt;br /&gt; <br>
+                        &lt;basefont size="4"&gt;Fonturi de marime 4.&lt;/font&gt;&lt;br /&gt; <br>
+                        &lt;font size="-3"&gt;Fonturi de marime 1.&lt;/font&gt;&lt;br /&gt; <br>
+                        &lt;font size="+2"&gt;Fonturi de marime 6.&lt;/font&gt;&lt;br /&gt; <br>
+                        &lt;font point-size="30"&gt;Fonturi de marime 30 pt (numai cu Netcape
+                        Communicator).&lt;/font&gt; &lt;br /&gt; <br>
+                        &lt;font point-size="50"&gt;Fonturi de marime 50 pt (numai cu Netcape
+                        Communicator).&lt;/font&gt; <br>
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </div>
+                </div>
+            </a>
+        </main>
+
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

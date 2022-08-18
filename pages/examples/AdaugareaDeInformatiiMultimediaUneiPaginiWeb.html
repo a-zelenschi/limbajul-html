@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Adaugarea de informatii multimedia unei pagini web</title>
+</head>
+
+<body>
+    <h2>Inserarea unei imagini</h2>
+    <object height="200" width="200" type="image/jpeg" data="../images/Taj_Mahal.jpg">
+    </object>
+    <br />
+    <h2>Inserarea unui sunet (format .wav)</h2>
+    <object classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95">
+        <param name="FileName" valua="Ready.wav">
+        <embed src="m_v/Ready.wav" width="100" height="40">
+        <noembed> Browser-ul dvs. nu suportă elementele object și nici embed</noembed>
+    </object>
+    <br />
+    <h2>Inserarea unui film (format .wmv)</h2>
+    <object width="240" height="160" type="video/x-ms-asf" url="3d.wmv" data="m_v/news.wmv"
+        classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6">
+        <param name="url" value="m_v/news.wmv">
+        <param name="filename" value="m_v/news.wmv">
+        <param name="autostart" value="1">
+        <param name="uiMode" value="full">
+        <param name="autosize" value="1">
+        <param name="playcount" value="1">
+        <embed type="application/x-mplayer2" src="m_v/news.wmv" width="240" height="160" autostart="true"
+            showcontrols="true" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/"></embed>
+    </object>
+    <br />
+    <h2>Inserarea unei pagini web</h2>
+    <object type="text/html" heght="200" width="400" data="ex40.html">
+    </object>
+    <br />
+    <h2>Inserarea unei animatii Flash (format .swf)</h2>
+    <object width="400" height="200" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#4,0,0,0">
+        <param name="movie" value="m_v/flash.swf">
+        <embed src="m_v/flash.swf" width="400" height="200">
+        </embed>
+    </object>
+</body>
+
+</html>

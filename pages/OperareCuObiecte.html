@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Limbajul HTML</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html">Limbajul HTML <i class="fas fa-file-code logo"></i></a>
+        <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+
+    </header>
+
+    <div class="page-container">
+
+        <aside id="side-menu">
+            <a href="./CeEsteHtml.html"> Ce este HTML</a>
+            <a href="./StructuraDocumentuluiHtml.html">Structura documentului HTML</a>
+            <a href="./FormatareaCaracterilor.html">Formatarea caracterelor, organizarea textului.</a>
+            <a href="./OperareCuObiecte.html">Operarea cu obiecte</a>
+            <a href="./Forme.html">Forme</a>
+        </aside>
+
+        <main>
+            <div class="row row-event">
+                <div class="col-100">
+                    <div class="event">
+
+                        <p class="aliniere">
+                            Folosirea imaginilor sporește atractivitatea și designul paginii, duce la o mai bună
+                            ințelegere a
+                            mesajului, dar trebuie luat în considerație și faptul că excesul de imagini va duce la
+                            incărcarea
+                            greoaie a site-ului. Există numeroase formate grafice, dar cele mai răspândite sunt:
+
+                            GIF (Graphics Interchange Format) introdus de Compuserve
+                            JPEG (Joint Photographic Expert Group)
+                            PNG (Portable Network Graphic – Format Grafic portabil în rețea)
+                            Aceste formate sunt dependente de platformă. Imaginile grafice sunt construite din pixeli,
+                            care sunt
+                            puncte distincte de informație de imagine. Fiecare pixel necesită un bit de culoare.
+                            Principalele
+                            caracteristici ale formatelor de imagine sunt: numărul de culori, compresia, transparența,
+                            intrețeserea
+                            și animația. Asemănările și deosebirile dintre cele trei formate grafice sunt:
+
+                            Imaginile GIF pot utiliza doar 256 de culori, având nevoie de 8 biți, în timp ce formatele
+                            JPEG și PNG
+                            pot utiliza milioane de culori, având 24 de biți de culoare, respectiv 32 de biți /pixeli de
+                            culoare.
+                            Ceea ce face formatul GIF atât de utilizat nu este numai paleta mică de culori (256), dar și
+                            posibilitatea reducerii numărului de culori, astfel, dacă este nevoie doar de 2 culori, se
+                            utilizează
+                            numai un bit, ceea ce reduce dimensiunea fișierului de 8 ori.
+                            Toate aceste trei formate grafice pot comprima imaginea pentru a reduce dimensiunile
+                            fișierelor.
+                            Comprimarea se poate face, în mod diferit, pentru fiecare format, și, din aceste motive, ele
+                            pot avea
+                            dimensiuni mai mici intr-un format decât în altul.
+                            Formatele GIF și PNG admit culoarea transparentă, în timp ce formatul JPEG nu admite
+                            transparența.
+                            Formatele GIF și PNG admit animația, în timp ce, cu formatul JPEG, nu se poate obține
+                            animație. De
+                            exemplu, pentru a obține animație pentru imagini GIF se poate folosi pentru Windows pachetul
+                            GIF
+                            Construction Set, iar pentru Macintosh pachetul soft GIFBuilder.
+                            Toate cele trei formate acceptă intrețeserea. De exemplu, când se vizualizează o pagină web,
+                            se pot
+                            observa imaginile care apar linie cu linie, de la forma brută până la redarea finală,
+                            aceasta reprezintă
+                            intrețeserea. Deși dimensiunea fișierelor crește cu până la 10%, cu ajutorul acestei
+                            intrețeseri,
+                            vizitatorul poate să-şi facă o imagine despre ceea ce se va descărca.
+                            Având în vedere cele cinci caracteristici ale formatelor de imagine, acestea pot fi
+                            recomandate:
+
+                            GIF – pentru majoritatea imaginilor din web, butoane, panouri publicitare, desene etc.,
+                            datorită
+                            dimensiunii mici a fișierelor.
+                            JPEG pentru fotografii, când se dorește să se redea cât mai exact culoarea reală a imaginii.
+                            PNG – pentru desene complexe, dar și pentru fotografii, acesta fiind formatul care imbină
+                            caracteristicile celor două.
+                            Imaginile pot fi descărcate de la adrese absolute sau relative. Adresele URL (Uniform
+                            Resource Locator)
+                            reprezintă standarde de identificare a resurselor (de exemplu, fișiere) și pot fi adrese URL
+                            absolute și
+                            relative.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a style="text-decoration: none;" href="./examples/AdaugareaDeInformatiiMultimediaUneiPaginiWeb.html"
+                target="_blank">
+                <div class="code-container">
+                    <br>
+                    &lt;html&gt; <br>
+                    &lt;head&gt; <br>
+                    &lt;title&gt;Adaugarea de informatii multimedia unei pagini web&lt;/title&gt; <br>
+                    &lt;/head&gt; <br>
+                    &lt;body&gt; <br>
+                    &lt;h2&gt;Inserarea unei imagini&lt;/h2&gt; <br>
+                    &lt;object height="200" width="200" type="image/jpeg" data="../images/Taj_Mahal.jpg"&gt; <br>
+                    &lt;/object&gt;<br>
+                    &lt;br /&gt; <br>
+                    &lt;h2&gt;Inserarea unui sunet (format .wav)&lt;/h2&gt; <br>
+                    &lt;object classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95"&gt; <br>
+                    &lt;param name="FileName" valua="Ready.wav"&gt; <br>
+                    &lt;embed src="m_v/Ready.wav" width="100" height="40" &gt; <br>
+                    &lt;noembed&gt; Browser-ul dvs. nu suportă elementele object și nici embed&lt;/noembed&gt; <br>
+                    &lt;/object&gt; <br>
+                    &lt;br /&gt; <br>
+                    &lt;h2&gt;Inserarea unui film (format .wmv)&lt;/h2&gt; <br>
+                    &lt;object width="240" height="160" type="video/x-ms-asf" url="3d.wmv" data="m_v/news.wmv" <br>
+                    classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6"&gt; <br>
+                    &lt;param name="url" value="m_v/news.wmv"&gt; <br>
+                    &lt;param name="filename" value="m_v/news.wmv"&gt; <br>
+                    &lt;param name="autostart" value="1"&gt; <br>
+                    &lt;param name="uiMode" value="full"&gt; <br>
+                    &lt;param name="autosize" value="1"&gt; <br>
+                    &lt;param name="playcount" value="1"&gt; <br>
+                    &lt;embed type="application/x-mplayer2" src="m_v/news.wmv" width="240" height="160" autostart="true"
+                    <br>
+                    showcontrols="true" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/"&gt;&lt;/embed&gt;
+                    <br>
+                    &lt;/object&gt; <br>
+                    &lt;br /&gt; <br>
+                    &lt;h2&gt;Inserarea unei pagini web&lt;/h2&gt; <br>
+                    &lt;object type="text/html" heght="200" width="400" data="ex40.html"&gt; <br>
+                    &lt;/object&gt; <br>
+                    &lt;br /&gt; <br>
+                    &lt;h2&gt;Inserarea unei animatii Flash (format .swf)&lt;/h2&gt; <br>
+                    &lt;object width="400" height="200" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" <br>
+                    codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#4,0,0,0"&gt; <br>
+                    &lt;param name="movie" value="m_v/flash.swf"&gt; <br>
+                    &lt;embed src="m_v/flash.swf" width="400" height="200"&gt; <br>
+                    &lt;/embed&gt; <br>
+                    &lt;/object&gt; <br>
+                    &lt;/body&gt; <br>
+                    &lt;/html&gt;<br>
+                </div>
+            </a>
+
+        </main>
+
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

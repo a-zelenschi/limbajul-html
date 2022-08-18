@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Limbajul HTML</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html">Limbajul HTML <i class="fas fa-file-code logo"></i></a>
+        <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+
+    </header>
+
+    <div class="page-container">
+
+        <aside id="side-menu">
+            <a href="./CeEsteHtml.html"> Ce este HTML</a>
+            <a href="./StructuraDocumentuluiHtml.html">Structura documentului HTML</a>
+            <a href="./FormatareaCaracterilor.html">Formatarea caracterelor, organizarea textului.</a>
+            <a href="./OperareCuObiecte.html">Operarea cu obiecte</a>
+            <a href="./Forme.html">Forme</a> 
+        </aside>
+
+        <main>
+            <div class="aliniere form-car">
+                Orice document HTML incepe cu notația &lt;html&gt; și se termina cu notația
+
+                &lt;/html&gt;. Aceste "chestii" se numesc în literatura de specialitate "TAG-uri".Prin convenție, toate
+                informațiile HTML incep cu o paranteza unghiulara deschisa "
+                &lt; " și se termina cu o paranteza unghiulara inchisa "&gt; ".
+                Tag-urile între aceste paranteze transmit comenzi către browser pentru a afișa pagina intr-un
+                anumit mod. Unele blocuri prezintă delimitator de sfârșit de bloc, în timp ce pentru alte
+                blocuri acest delimitator este opțional sau chiar interzis.
+                Între cele doua marcaje &lt; html &gt; și
+
+                &lt;/html &gt; vom introduce doua secțiuni:
+                - sectiunea de antet
+
+                &lt;head &gt;...&lt;/head &gt; și - corpul documentului
+
+                &lt;body&gt;...
+                &lt;/body&gt. Blocul
+
+                &lt;body&gt;... &lt;/body&gt; cuprinde conținutul propriu-zis al paginii HTML, adică ceea ce va fi
+                afișat
+                în
+                fereastra browser-ului.
+            </div>
+
+            <img class="img-center" src="https://web.ceiti.md/images/structura-html.png" alt="">
+
+            <div class="aliniere form-car">
+                O eticheta poate fi scris atât cu litere mici, cat și cu litere mari.
+                Adică &lt;html&gt; = &lt;HTML&gt; = &lt;Html&gt;. Caracterele "spațiu" și "CR/LF" ce apar intre etichete
+                sunt ignorate
+                de către browser.
+                Deci un prim document HTML ar fi ceva de genul asta:
+            </div>
+            <a class="form-car-href" href="./examples/MarimeaFontului.html" target="iframe_a">
+                <div class="html-code-container">
+                    <div class="code-container"><br>
+                        &lt;html&gt; <br>
+                        &lt;head&gt; <br>
+                        &lt;title>Aceasta este prima mea pagina de Web&lt;/title&gt; <br>
+                        &lt;/head&gt; <br>
+                        &lt;body&gt; <br>
+                        Bine ati venit în pagina mea de Web! <br>
+                        &lt;/body&gt; <br>
+                        &lt;/html&gt; <br>
+                    </div>
+                </div>
+            </a>
+        </main>
+
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
